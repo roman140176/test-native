@@ -1,0 +1,13 @@
+<div class="product-box__select">
+    <span class="product-box__select-name">Выбрать размер</span>
+    <div class="product-box__sizes">
+        {% set sizes = [{size:35,id:"select-1"},{size:36,id:"select-2"},{size:37,id:"select-3"}]%}
+        {% for s in sizes %}
+            <div class="product-box__size">
+                <input type="radio" name="product-size" value={{s.size}} id={{s.id}} class="product-box__radio">
+                <label for={{s.id}} class="product-box__label">{{s.size}}</label>
+            </div>
+        {% endfor %}         
+    </div>
+</div>
+<a href="#" class="product-box__find-size">Определить размер</a>

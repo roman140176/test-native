@@ -1,0 +1,106 @@
+.footer{
+    padding-top: 146px;
+    padding-bottom: 70px;
+
+    @media (max-width:768px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        @media (max-width:768px) {
+            padding: 0 20px;
+            justify-content: space-between;
+        }
+
+        @media (max-width:650px) {
+            display: grid;
+            grid-template-columns: 100px 100px 250px;
+            grid-gap: 15px;
+        }
+        @media (max-width:575px) {
+            display: flex;
+            justify-content: flex-start;
+            grid-gap: unset;
+        }
+
+        
+    }
+
+    &__item{
+
+        &-title{
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1;
+        }
+
+        &--form{
+            @media (max-width:575px) {
+                width: 100%;
+                padding-top: 50px;
+            }
+        }
+
+        &:first-child{
+            margin-right: 40px;
+        }
+        
+    }
+
+    &__list{
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    &__listItem:not(:last-child){
+        margin-bottom: 8px;
+    }
+
+    &__linkItem{
+        color: #333;
+        display: flex;
+        text-decoration: none;
+    }
+
+    &__form-box{
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 35px;
+    }
+
+
+    &__form-input{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #C4C4C4;
+        padding: 8px;
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__form-bottom{
+        display: flex;  
+        justify-content: flex-end;      
+    }
+
+    &__btn{
+        width: 150px;
+        height: 36px;
+        background-color: transparent;
+        border: 1px solid #333;
+        cursor: pointer;
+    }
+}
+
+.email-error{
+    color: chocolate;
+    font-size: 12px;
+}

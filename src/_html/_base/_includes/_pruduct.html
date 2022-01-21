@@ -1,0 +1,67 @@
+
+<div class="container product-container">
+    <div class="product-box">
+        <div class="product-box__img">
+            <picture >
+                <source type="image/webp"  srcset="assets/img/product.webp" />
+                <source type="image/jpg" srcset="assets/img/product.jpg" />
+                <img src="assets/img/product.jpg" class='product__photo' alt="logo" />
+            </picture>
+            
+            {% set items = [
+                { img: "assets/img/product.jpg", webp: "assets/img/product.webp",index:1 }, { img: "assets/img/product2.jpg", webp: "assets/img/product2.webp",index:2},
+                { img: "assets/img/product3.jpg", webp: "assets/img/product3.webp",index:3}, { img: "assets/img/product4.jpg", webp: "assets/img/product4.webp",index:4 },
+                { img: "assets/img/product5.jpg", webp: "assets/img/product5.webp",index:5 }
+                ]%}
+            <div class="product-box__thumbnales">
+                {% for item in items %}                
+                <div 
+                    {% if item.index == 1 %}
+                        class="product-box__thumnbale active"
+                        {% else %}
+                        class="product-box__thumnbale"
+                    {% endif %}
+                >                    
+                    <picture >
+                        <source type="image/webp"  srcset={{item.webp}} />
+                        <source type="image/jpg" srcset={{item.img}} />
+                        <img src={{item.img}} class="product__photo" alt="product" />
+                    </picture>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="product-box__info">
+            <h1 class="product-box__title">
+                Пижама для девочек
+            </h1>
+            <span class="product-box__art">Арт. 02765/46</span>
+            <div class="product-box__reviews">
+                <span class="product-box__reviews-title">Отзывы</span>   
+                    <div class="product-box__reviews-stars">
+                        {% set stars = [1,2,3,4,5]%}
+                        {% asyncEach star in stars %}
+                            {% if star <= 4 %}
+                                {% include "./_components/_fillstars.html" %}
+                            {% else %}
+                                {% include "./_components/_stars.html" %}
+                            {%endif%}
+                        {% endeach %}                                                
+                    </div>   
+                <span class="product-box__reviews-count">14 отзывов</span>   
+            </div>  
+            <div class="product-box__price">
+                <div class="product-box__price-new">800 <span>₽</span></div>
+                <div class="product-box__price-old">1 500 ₽</div>
+            </div>
+            <div class="product-box__sales">
+                <div class="product-box__sale">скидка -36%</div>  
+                <div class="product-box__sale">акция -20%</div>  
+            </div>
+            {% include "./_components/_select.html" %}
+            {% include "./_components/_tools.html" %}
+            {% include "./_components/_product-footer.html" %}
+            {% include "./_components/_styled.html" %}
+        </div>
+    </div>
+</div>

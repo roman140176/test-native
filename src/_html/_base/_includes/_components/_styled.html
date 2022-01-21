@@ -1,0 +1,42 @@
+<section class="styled">
+    <a href="" class="styled__show">
+        Посмотреть все стили
+    </a>
+    <div class="styled__container">
+        {% set styleds = [
+            {jpg:'assets/img/selected/1.jpg',webp:'assets/img/selected/1.webp'},{jpg:'assets/img/selected/2.jpg',webp:'assets/img/selected/2.webp'},
+             {jpg:'assets/img/selected/3.jpg',webp:'assets/img/selected/3.webp'},{jpg:'assets/img/selected/4.jpg',webp:'assets/img/selected/4.webp'}
+             ]%}
+        <div class="styled__main">
+            <picture >
+                <source type="image/webp"  srcset="assets/img/selected/main.webp" />
+                <source type="image/jpg" srcset="assets/img/selected/main.jpg" />
+                <img src="assets/img/selected/main.jpg" class='styled__photo' alt="product" />
+            </picture>
+        </div>
+        <div class="styled__images">
+            {% for styled in styleds %}  
+                <div class="styled__image">
+                    <picture >
+                        <source type="image/webp"  srcset={{styled.webp}} />
+                        <source type="image/jpg" srcset={{styled.jpg}} />
+                        <img src={{styled.jpg}}  class='styled__photo' alt="product" />
+                    </picture>
+                    <div class="styled__image-bg">
+                        <div class="styled__image-wn">
+                            <img src="assets/img/wn.svg">
+                        </div>
+                        <div class="styled__image-widget">
+                            <img src="assets/img/cw.svg">
+                            <p class="styled__image-text">Узнай, что на мне</p>
+                        </div>
+                        <div class="styled__image-likes">
+                            <img src="assets/img/ffr.svg">
+                            <span class="srtyled__image-count">200</span>
+                        </div>
+                    </div>
+                </div>  
+            {% endfor %}
+        </div>
+    </div>
+</section>

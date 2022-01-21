@@ -1,0 +1,46 @@
+<footer class="footer">
+    <div class="container footer__container">
+        {% set buyers = [
+            {href:"#",name:"Каталог"},{href:"#",name:"Акции"},{href:"#",name:"Бренды"}            
+            ] 
+        %}
+        {% set aboutus = [
+            {href:"#",name:"О компании"},{href:"#",name:"Новости"},{href:"#",name:"Команда"}            
+            ] 
+        %}
+        <div class="footer__item">
+            <h4 class="footer__item-title">
+                покупателям
+            </h4>
+            <ul class="footer__list">
+                {% for buyer in buyers %}
+                    <li class="footer__listItem">
+                        <a href={{buyer.href}} class="footer__linkItem">
+                            {{buyer.name}}
+                        </a>
+                    </li>
+                {% endfor%}
+            </ul>
+        </div>
+        <div class="footer__item">
+            <h4 class="footer__item-title">
+                о нас
+            </h4>
+            <ul class="footer__list">
+                {% for ab in aboutus %}
+                    <li class="footer__listItem">
+                        <a href={{ab.href}} class="footer__linkItem">
+                            {{ab.name}}
+                        </a>
+                    </li>
+                {% endfor%}
+            </ul>
+        </div>
+        <div class="footer__item footer__item--form">
+            <h4 class="footer__item-title">
+                Узнайте первыми о новинках и акциях
+            </h4>      
+            {% include "./_components/_footer-form.html" %}
+        </div>
+    </div>
+</footer>
