@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.min.css">
+</head>
+<body class="is-home">
+    <header class="header">
+    <div class="container header-container">
+        <a href="/" class="logo">
+            logo
+        </a>
+        <ul class="header__menu">
+            <li class="header__menuItem"><a class="header__menuLink" href="#">постельное белье</a></li>
+            <li class="header__menuItem"><a class="header__menuLink" href="#">одежда для дома</a></li>
+            <li class="header__menuItem"><a class="header__menuLink" href="#">Одежда для улицы</a></li>
+            <li class="header__menuItem"><a class="header__menuLink" href="#">ВЫход</a></li>
+        </ul>
+        <div class="header__tools">
+            <div class="header__widget profile-widget">
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8.9597" cy="4.18919" r="3.68919" stroke="#333333"/>
+                    <path d="M1 15.84C1 12.4347 5.34699 9.91339 8.71429 10.0023C11.9328 10.0872 16 12.4347 16 15.84" stroke="#333333"/>
+                </svg>
+            </div>
+            <div class="header__widget favorite-widget">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.90038 3.0948C6.70018 -2.52108 -2.59083 1.90389 1.76074 7.60175C6.1123 13.2996 8.40039 15.4908 8.40039 15.4908" stroke="#333333"/>
+                    <path d="M7.89433 3.0948C9.09453 -2.52108 18.7306 1.90389 14.379 7.60175C10.0275 13.2996 7.7002 15.5 7.7002 15.5" stroke="#333333"/>
+                    <path d="M7.3916 2.70776L8.40491 2.70782L8.38398 3.24104H7.3916V2.70776Z" fill="#333333"/>
+                </svg>
+                <div class="widget-counter" id="favorite-counter">0</div>
+            </div>
+            <div class="header__widget cart-widget">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.74689 4.86841H12.2531C13.7116 4.86841 14.8604 6.11177 14.7453 7.56571L14.2203 14.1973C14.1174 15.4974 13.0323 16.5 11.7281 16.5H4.27189C2.96769 16.5 1.88261 15.4974 1.77968 14.1973L1.25468 7.5657C1.13958 6.11177 2.2884 4.86841 3.74689 4.86841Z" stroke="#333333"/>
+                    <path d="M3.99993 9.5C3.99993 9.5 3.78323 1 7.99995 1C12.2167 1 11.9999 9.5 11.9999 9.5" stroke="#333333"/>
+                </svg>
+                <div class="widget-counter" id="cart-counter">0</div>
+            </div>
+            <div class="header__toggler">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="menu-mobile">
+    <div class="menu-mobile__close">
+        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3431 0.707107L0.707107 14.3431L0 13.636L13.636 1.96551e-07L14.3431 0.707107Z" fill="#333333"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.706712 0.707107L14.3427 14.3431L15.0498 13.636L1.41382 1.96551e-07L0.706712 0.707107Z" fill="#333333"/>
+        </svg>
+    </div>
+    <ul class="menu-mobile__list">
+        <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">постельное белье</a></li>
+        <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">одежда для дома</a></li>
+        <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Одежда для улицы</a></li>
+        <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Выход</a></li>
+    </ul>
+</div>
+    <div class="wrapper" id="wrapper">
+        <div class="content">
+            
+<div class="container product-container">
+    <div class="product-box">
+        <div class="product-box__img">
+            <picture >
+                <source type="image/webp"  srcset="assets/img/product.webp" />
+                <source type="image/jpg" srcset="assets/img/product.jpg" />
+                <img src="assets/img/product.jpg" class='product__photo' alt="logo" />
+            </picture>
+            
+            
+            <div class="product-box__thumbnales">
+                                
+                <div 
+                    
+                        class="product-box__thumnbale active"
+                        
+                >                    
+                    <picture >
+                        <source type="image/webp"  srcset=assets/img/product.webp />
+                        <source type="image/jpg" srcset=assets/img/product.jpg />
+                        <img src=assets/img/product.jpg class="product__photo" alt="product" />
+                    </picture>
+                </div>
+                                
+                <div 
+                    
+                        class="product-box__thumnbale"
+                    
+                >                    
+                    <picture >
+                        <source type="image/webp"  srcset=assets/img/product2.webp />
+                        <source type="image/jpg" srcset=assets/img/product2.jpg />
+                        <img src=assets/img/product2.jpg class="product__photo" alt="product" />
+                    </picture>
+                </div>
+                                
+                <div 
+                    
+                        class="product-box__thumnbale"
+                    
+                >                    
+                    <picture >
+                        <source type="image/webp"  srcset=assets/img/product3.webp />
+                        <source type="image/jpg" srcset=assets/img/product3.jpg />
+                        <img src=assets/img/product3.jpg class="product__photo" alt="product" />
+                    </picture>
+                </div>
+                                
+                <div 
+                    
+                        class="product-box__thumnbale"
+                    
+                >                    
+                    <picture >
+                        <source type="image/webp"  srcset=assets/img/product4.webp />
+                        <source type="image/jpg" srcset=assets/img/product4.jpg />
+                        <img src=assets/img/product4.jpg class="product__photo" alt="product" />
+                    </picture>
+                </div>
+                                
+                <div 
+                    
+                        class="product-box__thumnbale"
+                    
+                >                    
+                    <picture >
+                        <source type="image/webp"  srcset=assets/img/product5.webp />
+                        <source type="image/jpg" srcset=assets/img/product5.jpg />
+                        <img src=assets/img/product5.jpg class="product__photo" alt="product" />
+                    </picture>
+                </div>
+                
+            </div>
+        </div>
+        <div class="product-box__info">
+            <h1 class="product-box__title">
+                Пижама для девочек
+            </h1>
+            <span class="product-box__art">Арт. 02765/46</span>
+            <div class="product-box__reviews">
+                <span class="product-box__reviews-title">Отзывы</span>   
+                    <div class="product-box__reviews-stars">
+                        
+                        
+                            
+                                <div class="star">
+    <img src="assets/img/fillstar.svg">
+</div>
+                            
+                        
+                            
+                                <div class="star">
+    <img src="assets/img/fillstar.svg">
+</div>
+                            
+                        
+                            
+                                <div class="star">
+    <img src="assets/img/fillstar.svg">
+</div>
+                            
+                        
+                            
+                                <div class="star">
+    <img src="assets/img/fillstar.svg">
+</div>
+                            
+                        
+                            
+                                <div class="star">
+    <img src="assets/img/star.svg">
+</div>
+                            
+                                                                        
+                    </div>   
+                <span class="product-box__reviews-count">14 отзывов</span>   
+            </div>  
+            <div class="product-box__price">
+                <div class="product-box__price-new">800 <span>₽</span></div>
+                <div class="product-box__price-old">1 500 ₽</div>
+            </div>
+            <div class="product-box__sales">
+                <div class="product-box__sale">скидка -36%</div>  
+                <div class="product-box__sale">акция -20%</div>  
+            </div>
+            <div class="product-box__select">
+    <span class="product-box__select-name">Выбрать размер</span>
+    <div class="product-box__sizes">
+        
+        
+            <div class="product-box__size">
+                <input type="radio" name="product-size" value=35 id=select-1 class="product-box__radio">
+                <label for=select-1 class="product-box__label">35</label>
+            </div>
+        
+            <div class="product-box__size">
+                <input type="radio" name="product-size" value=36 id=select-2 class="product-box__radio">
+                <label for=select-2 class="product-box__label">36</label>
+            </div>
+        
+            <div class="product-box__size">
+                <input type="radio" name="product-size" value=37 id=select-3 class="product-box__radio">
+                <label for=select-3 class="product-box__label">37</label>
+            </div>
+                 
+    </div>
+</div>
+<a href="#" class="product-box__find-size">Определить размер</a>
+            <div class="product-box__tools">
+    <div class="product-box__quantity">
+        <span class="product-box__quantity-item product-box__increment">+</span>
+            <input type="text" value="1" name="quantity" id="quantity" class="product-box__quantity-item product-box__quantity-input">
+        <span class="product-box__quantity-item product-box__decriment">&ndash;</span>
+    </div>
+    <button class="hover-animate product-box__addCart" data-widget="#cart-counter">        
+        Добавить в корзину
+    </button>
+    <button class="hover-animate product-box__favorite" data-widget="#favorite-counter">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.90038 3.0948C6.70018 -2.52108 -2.59083 1.90389 1.76074 7.60175C6.1123 13.2996 8.40039 15.4908 8.40039 15.4908" stroke="white"/>
+            <path d="M7.89433 3.0948C9.09453 -2.52108 18.7306 1.90389 14.379 7.60175C10.0275 13.2996 7.7002 15.5 7.7002 15.5" stroke="white"/>
+            <path d="M7.3916 2.70776L8.40491 2.70782L8.38398 3.24104H7.3916V2.70776Z" fill="white"/>
+        </svg>
+    </button>
+</div>
+<div class="product-box__tools-footer">
+    <a href="#" class="product-box__by">
+        Купить в 1 клик
+    </a>
+</div>
+
+
+            <div class="product-box__footer">
+    <div class="product-box__footer-row">
+        <div class="product-box__footer-icon">
+            <img src="assets/img/cloth.svg" alt="Описание товара">
+        </div>
+        <div class="product-box__footer-text">Описание товара</div>
+    </div>
+    <div class="product-box__footer-row">
+        <div class="product-box__footer-icon">
+            <img src="assets/img/clock.svg" alt="Доставка и возврат">
+        </div>
+        <div class="product-box__footer-text">Доставка и возврат</div>
+    </div>
+    <div class="product-box__footer-row">
+        <div class="product-box__footer-icon">
+            <img src="assets/img/cash.svg" alt="Способы оплаты">
+        </div>
+        <div class="product-box__footer-text">Способы оплаты</div>
+    </div>
+    </div>
+</div>
+            <section class="styled">
+    <a href="" class="styled__show">
+        Посмотреть все стили
+    </a>
+    <div class="styled__container">
+        
+        <div class="styled__main">
+            <picture >
+                <source type="image/webp"  srcset="assets/img/selected/main.webp" />
+                <source type="image/jpg" srcset="assets/img/selected/main.jpg" />
+                <img src="assets/img/selected/main.jpg" class='styled__photo' alt="product" />
+            </picture>
+        </div>
+        <div class="styled__images">
+              
+                <div class="styled__image">
+                    <picture >
+                        <source type="image/webp"  srcset=assets/img/selected/1.webp />
+                        <source type="image/jpg" srcset=assets/img/selected/1.jpg />
+                        <img src=assets/img/selected/1.jpg  class='styled__photo' alt="product" />
+                    </picture>
+                    <div class="styled__image-bg">
+                        <div class="styled__image-wn">
+                            <img src="assets/img/wn.svg">
+                        </div>
+                        <div class="styled__image-widget">
+                            <img src="assets/img/cw.svg">
+                            <p class="styled__image-text">Узнай, что на мне</p>
+                        </div>
+                        <div class="styled__image-likes">
+                            <img src="assets/img/ffr.svg">
+                            <span class="srtyled__image-count">200</span>
+                        </div>
+                    </div>
+                </div>  
+              
+                <div class="styled__image">
+                    <picture >
+                        <source type="image/webp"  srcset=assets/img/selected/2.webp />
+                        <source type="image/jpg" srcset=assets/img/selected/2.jpg />
+                        <img src=assets/img/selected/2.jpg  class='styled__photo' alt="product" />
+                    </picture>
+                    <div class="styled__image-bg">
+                        <div class="styled__image-wn">
+                            <img src="assets/img/wn.svg">
+                        </div>
+                        <div class="styled__image-widget">
+                            <img src="assets/img/cw.svg">
+                            <p class="styled__image-text">Узнай, что на мне</p>
+                        </div>
+                        <div class="styled__image-likes">
+                            <img src="assets/img/ffr.svg">
+                            <span class="srtyled__image-count">200</span>
+                        </div>
+                    </div>
+                </div>  
+              
+                <div class="styled__image">
+                    <picture >
+                        <source type="image/webp"  srcset=assets/img/selected/3.webp />
+                        <source type="image/jpg" srcset=assets/img/selected/3.jpg />
+                        <img src=assets/img/selected/3.jpg  class='styled__photo' alt="product" />
+                    </picture>
+                    <div class="styled__image-bg">
+                        <div class="styled__image-wn">
+                            <img src="assets/img/wn.svg">
+                        </div>
+                        <div class="styled__image-widget">
+                            <img src="assets/img/cw.svg">
+                            <p class="styled__image-text">Узнай, что на мне</p>
+                        </div>
+                        <div class="styled__image-likes">
+                            <img src="assets/img/ffr.svg">
+                            <span class="srtyled__image-count">200</span>
+                        </div>
+                    </div>
+                </div>  
+              
+                <div class="styled__image">
+                    <picture >
+                        <source type="image/webp"  srcset=assets/img/selected/4.webp />
+                        <source type="image/jpg" srcset=assets/img/selected/4.jpg />
+                        <img src=assets/img/selected/4.jpg  class='styled__photo' alt="product" />
+                    </picture>
+                    <div class="styled__image-bg">
+                        <div class="styled__image-wn">
+                            <img src="assets/img/wn.svg">
+                        </div>
+                        <div class="styled__image-widget">
+                            <img src="assets/img/cw.svg">
+                            <p class="styled__image-text">Узнай, что на мне</p>
+                        </div>
+                        <div class="styled__image-likes">
+                            <img src="assets/img/ffr.svg">
+                            <span class="srtyled__image-count">200</span>
+                        </div>
+                    </div>
+                </div>  
+            
+        </div>
+    </div>
+</section>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <footer class="footer">
+    <div class="container footer__container">
+        
+        
+        <div class="footer__item">
+            <h4 class="footer__item-title">
+                покупателям
+            </h4>
+            <ul class="footer__list">
+                
+                    <li class="footer__listItem">
+                        <a href=# class="footer__linkItem">
+                            Каталог
+                        </a>
+                    </li>
+                
+                    <li class="footer__listItem">
+                        <a href=# class="footer__linkItem">
+                            Акции
+                        </a>
+                    </li>
+                
+                    <li class="footer__listItem">
+                        <a href=# class="footer__linkItem">
+                            Бренды
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <div class="footer__item">
+            <h4 class="footer__item-title">
+                о нас
+            </h4>
+            <ul class="footer__list">
+                
+                    <li class="footer__listItem">
+                        <a href=# class="footer__linkItem">
+                            О компании
+                        </a>
+                    </li>
+                
+                    <li class="footer__listItem">
+                        <a href=# class="footer__linkItem">
+                            Новости
+                        </a>
+                    </li>
+                
+                    <li class="footer__listItem">
+                        <a href=# class="footer__linkItem">
+                            Команда
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <div class="footer__item footer__item--form">
+            <h4 class="footer__item-title">
+                Узнайте первыми о новинках и акциях
+            </h4>      
+            <form action="/" class="footer__form">
+    <div class="footer__form-box">
+        <input class="footer__form-input" type="text" name="email" placeholder="Адрес электронной почты">
+        <div class="email-error"></div>
+    </div>
+    <div class="footer__form-bottom">
+        <button type="submit" class="footer__btn">
+            Подписаться
+        </button>
+    </div>
+
+</form>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="assets/js/app.min.js"></script>
+</body>
+</html>
